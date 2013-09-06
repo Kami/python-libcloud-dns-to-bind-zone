@@ -35,6 +35,7 @@ setup(
     author_email='tomaz+pypi@tomaz.me',
     description='Python module which allows you to export Libcloud DNS ' +
                 'zone to the BIND zone file format',
+    test_suite='tests',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
