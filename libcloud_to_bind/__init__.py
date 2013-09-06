@@ -57,7 +57,7 @@ def get_record_line(record):
         data = '"%s"' % (data)
 
     if record.type in [RecordType.MX, RecordType.SRV]:
-        priority = record.extra['priority']
+        priority = str(record.extra['priority'])
         parts = [name, ttl, 'IN', record_type, priority, data]
     else:
         parts = [name, ttl, 'IN', record_type, data]
