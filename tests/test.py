@@ -14,7 +14,11 @@
 # limitations under the License.
 
 import sys
-import unittest
+
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
 
 from libcloud.dns.base import Zone, Record
 from libcloud.dns.types import RecordType
